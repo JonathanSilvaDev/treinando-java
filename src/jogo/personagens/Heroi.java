@@ -30,6 +30,20 @@ public class Heroi {
         return "A categoria deste herói é: " + this.categoria;
     }
 
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 
+    public int getForca(){
+        return this.forca;
+    }
+
+    public void setForca(int forca){
+       if (forca <= 0){
+           this.forca = 1;
+       }else{
+           this.forca = forca;
+       }
+    }
 
 }
