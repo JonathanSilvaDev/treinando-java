@@ -2,8 +2,8 @@ package jogo.personagens;
 
 public class Monstro {
 
-    int forca;
-    int pontosDeVida;
+   private int forca;
+   private int pontosDeVida;
 
 
     public Monstro(int forca, int pontosDeVida){
@@ -11,5 +11,21 @@ public class Monstro {
         this.pontosDeVida = pontosDeVida;
 
     }
+
+
+    public int getForca(){
+        return this.forca;
+    }
+    public void setForca(int forca){
+        this.forca = forca;
+    }
+    public int getPontosDeVida(){
+        return this.pontosDeVida;
+    }
+
+    public void setPontosDeVida(int pontosDeVida){
+        this.pontosDeVida = pontosDeVida;
+    }
+
 
 }
